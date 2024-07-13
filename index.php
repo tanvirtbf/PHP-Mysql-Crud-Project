@@ -26,11 +26,11 @@ include 'header.php';
                 while ($row = mysqli_fetch_assoc($result)) {
                 ?>
                     <tr>
-                        <td>1</td>
-                        <td>Ramesh</td>
-                        <td>Delhi</td>
-                        <td>BCA</td>
-                        <td>9876543210</td>
+                        <td><?php echo $row['sid'] ?></td>
+                        <td><?php echo $row['sname'] ?></td>
+                        <td><?php echo $row['saddress'] ?></td>
+                        <td><?php echo $row['cname'] ?></td>
+                        <td><?php echo $row['sphone'] ?></td>
                         <td>
                             <a href='edit.php'>Edit</a>
                             <a href='delete-inline.php'>Delete</a>
@@ -39,7 +39,9 @@ include 'header.php';
                 <?php } ?>
             </tbody>
         </table>
-    <?php  } ?>
+    <?php  } else {
+        echo "<h1>No Record Found</h1>";
+    } ?>
 </div>
 </div>
 </body>
