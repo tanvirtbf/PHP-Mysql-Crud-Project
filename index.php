@@ -5,11 +5,8 @@ include 'header.php';
     <h2>All Records</h2>
     <?php
     $conn = mysqli_connect("localhost", "root", "", "crud") or die("Connection Failed");
-
     $sql = "SELECT * FROM student JOIN studentclass WHERE student.sclass = studentclass.cid";
-
     $result = mysqli_query($conn, $sql) or die("Query Unsuccessful");
-
     if (mysqli_num_rows($result) > 0) {
     ?>
         <table cellpadding="7px">
@@ -41,7 +38,9 @@ include 'header.php';
         </table>
     <?php  } else {
         echo "<h1>No Record Found</h1>";
-    } ?>
+    }
+    mysqli_close($conn,)
+    ?>
 </div>
 </div>
 </body>
