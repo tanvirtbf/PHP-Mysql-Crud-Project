@@ -3,14 +3,21 @@ include 'header.php';
 ?>
 <div id="main-content">
     <h2>All Records</h2>
+    <?php
+        $conn = mysqli_connect("localhost", "root", "", "crud") or die("Connection Failed");
+
+        $sql = "SELECT * FROM student JOIN studentclass WHERE student.sclass = studentclass.cid";
+
+        $result = mysqli_query($conn,$sql) or die("Query Unsuccessful");
+    ?>
     <table cellpadding="7px">
         <thead>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Address</th>
-        <th>Class</th>
-        <th>Phone</th>
-        <th>Action</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Class</th>
+            <th>Phone</th>
+            <th>Action</th>
         </thead>
         <tbody>
             <tr>
@@ -73,4 +80,5 @@ include 'header.php';
 </div>
 </div>
 </body>
+
 </html>
