@@ -21,7 +21,6 @@
 
                 while ($row = mysqli_fetch_assoc($result)) {
 
-
                 ?>
                     <option value="<?php echo $row['cid']; ?>"><?php echo $row['cname']; ?></option>
                 <?php  } ?>
