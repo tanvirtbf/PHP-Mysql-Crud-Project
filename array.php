@@ -35,30 +35,24 @@
 // }
 
 // MultiDimensional Array
-$assArr = [
-  ['Name'=>'Tanvir','Age'=>25,'Address'=>'Dhaka'],
-  ['Name'=>'Sadia','Age'=>15,'Address'=>'Tiara'],
-  ['Name'=>'Maymuna','Age'=>20,'Address'=>'Brahmonbaria'],
-];
+// $assArr = [
+//   ['Name'=>'Tanvir','Age'=>25,'Address'=>'Dhaka'],
+//   ['Name'=>'Sadia','Age'=>15,'Address'=>'Tiara'],
+//   ['Name'=>'Maymuna','Age'=>20,'Address'=>'Brahmonbaria'],
+// ];
 
-foreach($assArr as $child){
-  foreach($child as $key=>$value){
-    echo "$key : $value <br />";
-  }
-  echo "<br />";
-};
+// foreach($assArr as $child){
+//   foreach($child as $key=>$value){
+//     echo "$key : $value <br />";
+//   }
+//   echo "<br />";
+// };
 
+// Array built in Function 
 
+//1. array() 
+$arr = array(1, 2, 3, 4, 5);
+echo $arr[2];
 
-
-
-
-
-
-
-
-
-
-
-
-?>
+//2. print_r()
+print_r($arr); // print array with all definition
