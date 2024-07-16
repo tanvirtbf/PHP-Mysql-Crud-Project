@@ -16,4 +16,9 @@ for($i=0;$i<count($arr1);$i++){
   echo $arr1[$i];
 }
 
+//Foreach Loop with Array
+foreach($arr2 as $item){
+  echo $item;
+}
+
 ?>
