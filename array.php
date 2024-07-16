@@ -68,7 +68,17 @@
 // print_r($value);
 
 //5. array_combine()
-$keys = ['firstName','lastName','age'];
-$values = ['Tanvir','Ahmed',25];
-$combine = array_combine($keys,$values);
-print_r($combine);
+// $keys = ['firstName','lastName','age'];
+// $values = ['Tanvir','Ahmed',25];
+// $combine = array_combine($keys,$values);
+// print_r($combine);
+
+//6. array_fill()
+// $fillArr = array_fill(0,5,"Tanvir");
+// print_r($fillArr);
+
+//7. array_push()
+$pushArr = ['tanvir','sadia'];
+print_r($pushArr);
+array_push($pushArr,'maymuna','humaira','ayesha');
+print_r($pushArr);
