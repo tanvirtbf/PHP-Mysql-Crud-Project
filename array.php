@@ -51,8 +51,19 @@
 // Array built in Function 
 
 //1. array() 
-$arr = array(1, 2, 3, 4, 5);
-echo $arr[2];
+// $arr = array(1, 2, 3, 4, 5);
+// echo $arr[2];
 
 //2. print_r()
-print_r($arr); // print array with all definition
+//print_r($arr); // print array with all definition
+
+//3. array_values()
+// $arr = ['firstName'=>'Tanvir','lastName'=>'Ahmed','Age'=>25];
+// $value = array_values($arr);
+// print_r($value);
+
+//4. array_keys()
+// $arr = ['firstName'=>'Tanvir','lastName'=>'Ahmed','Age'=>25];
+// $value = array_keys($arr);
+// print_r($value);
+
