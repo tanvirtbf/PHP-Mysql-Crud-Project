@@ -30,7 +30,9 @@ $assArr = [
 ];
 print_r($assArr);
 
-
+foreach($assArr as $key=>$value){
+  echo "$key : $value <br />"; 
+}
 
 
 
