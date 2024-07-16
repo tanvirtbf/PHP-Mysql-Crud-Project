@@ -78,7 +78,13 @@
 // print_r($fillArr);
 
 //7. array_push()
-$pushArr = ['tanvir','sadia'];
-print_r($pushArr);
-array_push($pushArr,'maymuna','humaira','ayesha');
-print_r($pushArr);
+// $pushArr = ['tanvir','sadia'];
+// print_r($pushArr);
+// array_push($pushArr,'maymuna','humaira','ayesha');
+// print_r($pushArr);
+
+//8. array_pop()
+$popArr = ['tanvir','sadia','maymuna','humaira'];
+array_pop($popArr);
+array_pop($popArr);
+print_r($popArr);
