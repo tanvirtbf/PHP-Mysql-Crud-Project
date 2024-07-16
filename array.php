@@ -21,18 +21,27 @@
 //   echo $item;
 // }
 
-$assArr = [
-  'Name' => 'Tanvir Ahmed',
-  'Wife' => 'Sadia Ahmed',
-  'Age' => 15,
-  'Class' => 'BSC 3rd year',
-  'Address' => 'Dhaka Sonir Akhra'
-];
-print_r($assArr);
+// $assArr = [
+//   'Name' => 'Tanvir Ahmed',
+//   'Wife' => 'Sadia Ahmed',
+//   'Age' => 15,
+//   'Class' => 'BSC 3rd year',
+//   'Address' => 'Dhaka Sonir Akhra'
+// ];
+// print_r($assArr);
 
-foreach($assArr as $key=>$value){
-  echo "$key : $value <br />"; 
-}
+// foreach($assArr as $key=>$value){
+//   echo "$key : $value <br />"; 
+// }
+
+// MultiDimensional Array
+$assArr = [
+  ['Name'=>'Tanvir','Age'=>25,'Address'=>'Dhaka'],
+  ['Name'=>'Sadia','Age'=>15,'Address'=>'Tiara'],
+  ['Name'=>'Maymuna','Age'=>20,'Address'=>'Brahmonbaria'],
+]
+
+
 
 
 
