@@ -39,7 +39,14 @@ $assArr = [
   ['Name'=>'Tanvir','Age'=>25,'Address'=>'Dhaka'],
   ['Name'=>'Sadia','Age'=>15,'Address'=>'Tiara'],
   ['Name'=>'Maymuna','Age'=>20,'Address'=>'Brahmonbaria'],
-]
+];
+
+foreach($assArr as $child){
+  foreach($child as $key=>$value){
+    echo "$key : $value <br />";
+  }
+  echo "<br />";
+};
 
 
 
