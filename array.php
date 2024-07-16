@@ -67,3 +67,8 @@
 // $value = array_keys($arr);
 // print_r($value);
 
+//5. array_combine()
+$keys = ['firstName','lastName','age'];
+$values = ['Tanvir','Ahmed',25];
+$combine = array_combine($keys,$values);
+print_r($combine);
